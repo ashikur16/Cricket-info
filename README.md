@@ -1,6 +1,6 @@
 # Cricket-info
-iOS App -> This is an individual work
-Recorded Video: https://youtu.be/HAVZP48cX6M
+##### iOS App -> This is an individual work
+##### Recorded Video: https://youtu.be/HAVZP48cX6M
 
 ## Features
 ### 1. Live matches
