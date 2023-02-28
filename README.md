@@ -1,5 +1,5 @@
 # Cricket-info
-iOS App
+iOS App -> This is an individual work
 
 ## Features
 ### 1. Live matches
@@ -13,7 +13,8 @@ iOS App
 ### 9. Team Ranking
 ### 10. League wise and date wise fixture
 
+![Apple iPhone 11 Pro Max Presentation](https://user-images.githubusercontent.com/86765218/221936685-cc944a39-3704-4e32-aa01-588944f924c1.png)
 
-![Uploading Apple iPhone 11 Pro Max Presentation.png…]()
-![Apple iPhone 11 Pro Max Presentation (1)](https://user-images.githubusercontent.com/86765218/221935838-085ebad4-633e-42be-9dee-dcded560c10a.png)
+![Apple iPhone 11 Pro Max Presentation (1)](https://user-images.githubusercontent.com/86765218/221936698-e3af38f8-bafd-4088-b1ec-4a865a41ab09.png)
+
 ![Uploading Apple iPhone 11 Pro Max Presentation (3).png…]()
