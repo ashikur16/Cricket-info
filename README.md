@@ -17,4 +17,4 @@ iOS App -> This is an individual work
 
 ![Apple iPhone 11 Pro Max Presentation (1)](https://user-images.githubusercontent.com/86765218/221936698-e3af38f8-bafd-4088-b1ec-4a865a41ab09.png)
 
-![Uploading Apple iPhone 11 Pro Max Presentation (3).png…]()
+![Apple iPhone 11 Pro Max Presentation (3)](https://user-images.githubusercontent.com/86765218/221938218-c31fa3f7-4ab2-4a04-96de-be61ba63574d.png)
