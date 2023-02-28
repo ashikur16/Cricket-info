@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c8o-pl-i1A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Team Ranking View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TeamRankingViewController" customModule="Cricket_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfk-Nb-onJ">
+                                <rect key="frame" x="20" y="88" width="203" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wR0-fE-uET">
+                                <rect key="frame" x="0.0" y="180" width="414" height="633"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamRankingTableViewCell" rowHeight="80" id="5Os-xb-Gkw" customClass="TeamRankingTableViewCell" customModule="Cricket_Info" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Os-xb-Gkw" id="YRh-hz-I1n">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-qi-rNQ">
+                                                    <rect key="frame" x="8" y="8" width="398" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xId-zc-cgh">
+                                                            <rect key="frame" x="20" y="21.5" width="9" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flag_of_Bangladesh.svg" translatesAutoresizingMaskIntoConstraints="NO" id="QL7-56-iqg">
+                                                            <rect key="frame" x="49" y="2" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="Xen-bP-atL"/>
+                                                                <constraint firstAttribute="height" constant="60" id="bJ3-50-HxP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangladesh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3Y-qC-dMU">
+                                                            <rect key="frame" x="129" y="21.5" width="90" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="xId-zc-cgh" firstAttribute="centerY" secondItem="DQu-qi-rNQ" secondAttribute="centerY" id="4h7-m0-JfV"/>
+                                                        <constraint firstItem="QL7-56-iqg" firstAttribute="centerY" secondItem="DQu-qi-rNQ" secondAttribute="centerY" id="aKV-1h-cHz"/>
+                                                        <constraint firstItem="C3Y-qC-dMU" firstAttribute="centerY" secondItem="DQu-qi-rNQ" secondAttribute="centerY" id="fw8-e4-9X1"/>
+                                                        <constraint firstItem="C3Y-qC-dMU" firstAttribute="leading" secondItem="QL7-56-iqg" secondAttribute="trailing" constant="20" id="nza-pM-uHU"/>
+                                                        <constraint firstItem="QL7-56-iqg" firstAttribute="leading" secondItem="xId-zc-cgh" secondAttribute="trailing" constant="20" id="pYy-F0-3Ho"/>
+                                                        <constraint firstItem="xId-zc-cgh" firstAttribute="leading" secondItem="DQu-qi-rNQ" secondAttribute="leading" constant="20" id="r2W-cL-T6X"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="DQu-qi-rNQ" secondAttribute="trailing" constant="8" id="3cl-ef-nrg"/>
+                                                <constraint firstAttribute="bottom" secondItem="DQu-qi-rNQ" secondAttribute="bottom" constant="8" id="DJB-ke-gf6"/>
+                                                <constraint firstItem="DQu-qi-rNQ" firstAttribute="top" secondItem="YRh-hz-I1n" secondAttribute="top" constant="8" id="Fvh-F6-wm2"/>
+                                                <constraint firstItem="DQu-qi-rNQ" firstAttribute="leading" secondItem="YRh-hz-I1n" secondAttribute="leading" constant="8" id="tyZ-T9-wWw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94945365189999997" green="0.95289677380000004" blue="0.97798877949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="bgView" destination="DQu-qi-rNQ" id="qW1-wH-pFo"/>
+                                            <outlet property="rank" destination="xId-zc-cgh" id="xae-TF-1kn"/>
+                                            <outlet property="teamFlag" destination="QL7-56-iqg" id="It3-Y8-fzx"/>
+                                            <outlet property="teamName" destination="C3Y-qC-dMU" id="ltH-J3-afg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nBl-QR-PwM">
+                                <rect key="frame" x="30" y="139" width="354" height="32"/>
+                                <segments>
+                                    <segment title="Test"/>
+                                    <segment title="ODI"/>
+                                    <segment title="T20"/>
+                                </segments>
+                                <connections>
+                                    <action selector="chooseType:" destination="Y6W-OH-hqX" eventType="valueChanged" id="t7Q-yF-FdL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.94945365189999997" green="0.95289677380000004" blue="0.97798877949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wR0-fE-uET" firstAttribute="top" secondItem="nBl-QR-PwM" secondAttribute="bottom" constant="10" id="0Bw-sF-HEq"/>
+                            <constraint firstItem="nBl-QR-PwM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="6F9-pp-olJ"/>
+                            <constraint firstItem="wR0-fE-uET" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ACz-ts-9qO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nBl-QR-PwM" secondAttribute="trailing" constant="30" id="Au0-ao-zWd"/>
+                            <constraint firstItem="nBl-QR-PwM" firstAttribute="top" secondItem="wfk-Nb-onJ" secondAttribute="bottom" constant="15" id="HdX-2T-wfp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wR0-fE-uET" secondAttribute="bottom" id="OBU-Mn-1iO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wR0-fE-uET" secondAttribute="trailing" id="WRH-06-bUe"/>
+                            <constraint firstItem="wfk-Nb-onJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="iM7-rW-aGb"/>
+                            <constraint firstItem="wfk-Nb-onJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vPY-ME-XiF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gdO-Ld-SYL"/>
+                    <connections>
+                        <outlet property="segmentController" destination="nBl-QR-PwM" id="MqV-iH-WEl"/>
+                        <outlet property="tableView" destination="wR0-fE-uET" id="rgQ-Lt-8Hc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="75.669642857142847"/>
+        </scene>
+        <!--Team Ranking-->
+        <scene sceneID="ret-Uk-CPd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c8o-pl-i1A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Team Ranking" image="flag" catalog="system" id="aT8-jp-mOa"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LL0-BC-1N8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="2OV-FF-QMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyj-Eq-rex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flag_of_Bangladesh.svg" width="800" height="480"/>
+        <image name="flag" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
